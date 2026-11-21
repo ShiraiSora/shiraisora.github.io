@@ -87,18 +87,77 @@
     return '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 7.5h16v10H4z"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="m4 8 8 6 8-6"/></svg>';
   }
 
+  function fallbackCopy(text) {
+    var area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "");
+    area.style.cssText = "position:fixed;left:-9999px;top:0";
+    document.body.appendChild(area);
+    area.focus();
+    area.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (err) {}
+    area.remove();
+    return ok;
+  }
+
+  function copyText(value, button) {
+    var text = String(value || "");
+    if (!text) return;
+    var original = button.textContent;
+    var done = function (ok) {
+      if (!ok) return;
+      button.textContent = "コピーした";
+      window.setTimeout(function () {
+        button.textContent = original;
+      }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }).catch(function () {
+        done(fallbackCopy(text));
+      });
+    } else {
+      done(fallbackCopy(text));
+    }
+  }
+
+  function renderInviteCode(code) {
+    var row = el("span", "invite-code");
+    var label = el("span", "invite-code-label");
+    label.textContent = "紹介コード";
+    var value = el("span", "invite-code-value");
+    value.textContent = code;
+    var button = el("button", "copy-code");
+    button.type = "button";
+    button.textContent = "コピー";
+    button.setAttribute("aria-label", "紹介コード " + code + " をコピー");
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      copyText(code, button);
+    });
+    row.appendChild(label);
+    row.appendChild(value);
+    row.appendChild(button);
+    return row;
+  }
+
   function renderCard(item, section, index) {
     var kind = linkKind(item.url);
     var soon = !kind;
-    var card = el(soon ? "div" : "a", "card" + (soon ? " is-soon" : ""));
+    var code = String(item.code || "").trim();
+    var splitLink = !soon && !!code;
+    var card = el(soon || splitLink ? "div" : "a", "card" + (soon ? " is-soon" : "") + (splitLink ? " has-code" : ""));
+    var main = card;
     if (soon) {
       card.setAttribute("role", "group");
       card.setAttribute("aria-label", item.title + "、準備中");
     } else {
-      card.href = kind.href;
+      if (splitLink) main = el("a", "card-hit");
+      main.href = kind.href;
       if (kind.external) {
-        card.target = "_blank";
-        card.rel = section && section.sponsored ? "sponsored noopener noreferrer" : "noopener noreferrer";
+        main.target = "_blank";
+        main.rel = section && section.sponsored ? "sponsored noopener noreferrer" : "noopener noreferrer";
       }
     }
 
@@ -156,9 +215,14 @@
       trail.innerHTML = '<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M5 10h10M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     }
 
-    card.appendChild(mark);
-    card.appendChild(body);
-    card.appendChild(trail);
+    main.appendChild(mark);
+    main.appendChild(body);
+    main.appendChild(trail);
+    if (splitLink) card.appendChild(main);
+    if (code) {
+      if (soon) card.classList.add("has-code");
+      card.appendChild(renderInviteCode(code));
+    }
     return card;
   }
 

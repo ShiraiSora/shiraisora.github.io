@@ -206,9 +206,10 @@
         },
         {
           "title": "Runway",
-          "note": "動画生成AIの紹介特典は準備中",
-          "url": "",
-          "badge": "招待特典"
+          "note": "動画生成AI。登録時に紹介コードを入力（有料プラン継続で特典クレジット）",
+          "url": "https://app.runwayml.com/signup",
+          "badge": "招待特典",
+          "code": "shiraisora_ai-eqigvw"
         },
         {
           "title": "Tripo 3D",

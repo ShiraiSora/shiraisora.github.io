@@ -15,6 +15,7 @@ YouTube チャンネル「白井ソラのAIニュース」のプロフィール�
 | `url` | はい | 遷移先。空文字 `""` にすると「準備中」になり、押せません |
 | `badge` | いいえ | 例: `招待特典` / `PR` / `動画で紹介` |
 | `image` | いいえ | 左に出す画像。`assets/example.webp` のようなパス |
+| `code` | いいえ | 紹介コード。あるとカード内に表示し、コピーできます |
 
 招待リンクを足す例:
 
@@ -24,6 +25,7 @@ YouTube チャンネル「白井ソラのAIニュース」のプロフィール�
   "note": "新規登録でクレジット付与",
   "url": "https://example.com/invite",
   "badge": "招待特典",
+  "code": "example_code",
   "image": "assets/example.webp"
 }
 ```
