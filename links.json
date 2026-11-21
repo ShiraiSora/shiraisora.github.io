@@ -220,9 +220,10 @@
         },
         {
           "title": "Meshy",
-          "note": "3Dモデル生成の紹介特典は準備中",
-          "url": "",
-          "badge": "PR"
+          "note": "3Dモデル生成AI。このリンクから登録して有料プランにすると800クレジットプレゼント",
+          "url": "https://www.meshy.ai/?utm_source=meshy&utm_medium=referral-program&utm_content=P9OLH1&share_type=invite-friends",
+          "badge": "招待特典",
+          "code": "P9OLH1"
         },
         {
           "title": "ElevenLabs",
