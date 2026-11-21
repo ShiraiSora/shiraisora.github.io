@@ -14,7 +14,7 @@
     "iconFallback": "assets/icon.png",
     "iconAlt": "白井ソラ"
   },
-  "disclosure": "※本ページにはアフィリエイトリンク・招待コードを含みます（PR）",
+  "disclosure": "※本ページにはアフィリエイト広告（楽天アフィリエイト・A8.net）と招待コードを含みます（PR）",
   "pendingNote": "招待リンクと紹介リンクは、動画に合わせて開いていきます。",
   "footer": "白井ソラのAIニュース",
   "sections": [
@@ -34,6 +34,162 @@
           "note": "ショートで紹介したアイテムの詳細は準備中です。",
           "url": "",
           "badge": "動画で紹介"
+        }
+      ]
+    },
+    {
+      "id": "ai-tools",
+      "title": "AIツール・AIガジェット",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "Plaud AIボイスレコーダー",
+          "note": "録音と文字起こしができるAIボイスレコーダー",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+AKG0C2+5J4W+5YZ76",
+          "badge": "PR"
+        },
+        {
+          "title": "Aiarty Image Enhancer",
+          "note": "画像を高画質化するAIソフト",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+B1459U+428G+HVFKY",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "mini-pc",
+      "title": "ミニPC",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "GMKtec ミニPC（公式）",
+          "note": "省スペースな小型デスクトップPC",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+B1PKVM+5W12+5YRHE",
+          "badge": "PR"
+        },
+        {
+          "title": "MINISFORUM ミニPC（公式）",
+          "note": "省スペースな小型デスクトップPC",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+AQECDU+5O6K+5YJRM",
+          "badge": "PR"
+        },
+        {
+          "title": "GMKtec G10 ミニPC",
+          "note": "楽天市場で扱っているGMKtecのミニPC",
+          "url": "https://a.r10.to/hPC9FV",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "audio-wearable",
+      "title": "イヤホン・ウェアラブル",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "EarFun（公式）",
+          "note": "ワイヤレスイヤホンなどの公式ストア",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+AP7H6A+5REO+5YRHE",
+          "badge": "PR"
+        },
+        {
+          "title": "Edifier NeoBuds Pro 2",
+          "note": "ワイヤレスイヤホン",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+B89CJ6+5BV8+BWVTE",
+          "badge": "PR"
+        },
+        {
+          "title": "HUAWEI（公式）",
+          "note": "スマートウォッチなどの公式ストア",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+B8US4Y+4NTO+61JSI",
+          "badge": "PR"
+        },
+        {
+          "title": "Anker Soundcore P31i",
+          "note": "ワイヤレスイヤホン",
+          "url": "https://a.r10.to/hgNk0h",
+          "badge": "PR"
+        },
+        {
+          "title": "HUAWEI Band 11",
+          "note": "スマートバンド",
+          "url": "https://a.r10.to/hPIjYm",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "desk-charge",
+      "title": "デスク周り・充電",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "Anker Nano Power Bank 5000mAh",
+          "note": "コンパクトなモバイルバッテリー",
+          "url": "https://a.r10.to/hgEnpz",
+          "badge": "PR"
+        },
+        {
+          "title": "Anker Nano II 65W 充電器",
+          "note": "USB急速充電器",
+          "url": "https://a.r10.to/h5GHoO",
+          "badge": "PR"
+        },
+        {
+          "title": "スマホ／タブレットスタンド",
+          "note": "スマホやタブレットを立てて置けるスタンド",
+          "url": "https://a.r10.to/h5VMn0",
+          "badge": "PR"
+        },
+        {
+          "title": "ロジクール K295 キーボード",
+          "note": "静音タイプのキーボード",
+          "url": "https://a.r10.to/h5pl1k",
+          "badge": "PR"
+        },
+        {
+          "title": "Anker 332 USB-C ハブ",
+          "note": "USB-C接続の拡張ハブ",
+          "url": "https://a.r10.to/hYF201",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "security-vpn",
+      "title": "セキュリティ・VPN",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "ESET HOME セキュリティ",
+          "note": "セキュリティソフト",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+AMTQR6+1A8Q+15P77M",
+          "badge": "PR"
+        },
+        {
+          "title": "ExpressVPN",
+          "note": "VPNサービス",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+ANF6CY+5JSS+5YRHE",
+          "badge": "PR"
+        },
+        {
+          "title": "NordVPN",
+          "note": "VPNサービス",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+B9G7QQ+3YFI+674EQ",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "car",
+      "title": "カーガジェット",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "OTTOCAST CarPlay",
+          "note": "CarPlay対応のカーガジェット",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BGQH0+B2B0HE+5YDI+5YJRM",
+          "badge": "PR"
         }
       ]
     },
@@ -87,22 +243,10 @@
       ]
     },
     {
-      "id": "gear",
-      "title": "ソラのおすすめガジェット・制作環境",
+      "id": "hosting",
+      "title": "サイト運営",
       "sponsored": true,
       "items": [
-        {
-          "title": "AI録音デバイス PLAUD",
-          "note": "会議や取材の録音と文字起こし",
-          "url": "",
-          "badge": "PR"
-        },
-        {
-          "title": "デスク周り",
-          "note": "マイク、照明、モニターアーム",
-          "url": "",
-          "badge": "動画で紹介"
-        },
         {
           "title": "レンタルサーバー ConoHa WING",
           "note": "サイト公開用のレンタルサーバー",
