@@ -213,9 +213,10 @@
         },
         {
           "title": "Tripo 3D",
-          "note": "3D生成のお試し案内は準備中",
-          "url": "",
-          "badge": "PR"
+          "note": "3Dモデル生成AI。このリンクから無料登録で300クレジットプレゼント",
+          "url": "https://studio.tripo3d.ai/?utm_source=creator_invite&utm_medium=linkcopy&utm_campaign=referral_landing_page&invite_code=J5P8Y8&uid=2251799817694413",
+          "badge": "招待特典",
+          "code": "J5P8Y8"
         },
         {
           "title": "Meshy",
