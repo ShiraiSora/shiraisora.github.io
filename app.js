@@ -70,7 +70,7 @@
     if (text.indexOf("招待") !== -1) return "invite";
     if (text.indexOf("動画") !== -1) return "video";
     if (text.indexOf("公式") !== -1) return "official";
-    if (/PR|ＰＲ/i.test(text)) return "pr";
+    if (text.indexOf("アフィリエイト") !== -1 || /PR|ＰＲ/i.test(text)) return "pr";
     return "neutral";
   }
 
