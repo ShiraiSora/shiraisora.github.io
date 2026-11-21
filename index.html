@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <title>白井ソラのAIニュース｜お得ツール＆紹介ガジェットまとめ</title>
+  <meta name="description" content="最新AIニュースとガジェットを、ソラがわかりやすくお届け！動画で紹介したAIサービスと制作環境のまとめです。">
+  <meta name="theme-color" content="#e7f3ff">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="白井ソラのAIニュース｜お得ツール＆紹介ガジェットまとめ">
+  <meta property="og:description" content="最新AIニュースとガジェットを、ソラがわかりやすくお届け！動画で紹介したAIサービスと制作環境のまとめです。">
+  <meta property="og:url" content="https://shiraisora.github.io/">
+  <meta property="og:image" content="https://shiraisora.github.io/assets/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="白井ソラのAIニュース">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="白井ソラのAIニュース｜お得ツール＆紹介ガジェットまとめ">
+  <meta name="twitter:description" content="最新AIニュースとガジェットを、ソラがわかりやすくお届け！動画で紹介したAIサービスと制作環境のまとめです。">
+  <meta name="twitter:image" content="https://shiraisora.github.io/assets/ogp.png">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <script>
+    (function () {
+      var key = "sora-theme";
+      var theme = null;
+      var q = new URLSearchParams(location.search).get("theme");
+      if (q === "light" || q === "dark") theme = q;
+      if (!theme) {
+        try { theme = localStorage.getItem(key); } catch (e) {}
+      }
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", theme === "dark" ? "#0e1522" : "#e7f3ff");
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <p class="disclosure" id="disclosure-text" role="note">※本ページにはアフィリエイトリンク・招待コードを含みます（PR）</p>
+
+    <header class="hero">
+      <img class="hero-portrait" src="assets/portrait.webp" alt="白井ソラ" width="280" height="360" fetchpriority="high" onerror="this.dataset.missing='1'">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="ダークモードに切り替え">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M14.5 2.4a8.8 8.8 0 1 0 7.1 13.2A8.2 8.2 0 0 1 14.5 2.4z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="currentColor"/>
+          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4 19 19M19 5l-1.6 1.6M6.6 17.4 5 19"/>
+          </g>
+        </svg>
+      </button>
+      <div class="lower-third">
+        <p class="hero-kicker" id="hero-kicker">AI NEWS</p>
+        <p class="hero-name" id="hero-name">白井ソラ</p>
+      </div>
+    </header>
+
+    <section class="profile">
+      <div class="avatar-wrap">
+        <img class="avatar" id="profile-icon" src="assets/icon.webp" alt="白井ソラ" width="92" height="92">
+        <img class="wave" src="assets/chibi-wave.webp" alt="" width="84" height="84" onerror="this.remove()">
+      </div>
+      <h1 id="profile-name">白井ソラのAIニュース</h1>
+      <p class="bio" id="profile-bio">最新AIニュースとガジェットを、ソラがわかりやすくお届け！</p>
+    </section>
+
+    <div class="pending" id="pending">
+      <img src="assets/chibi-think.webp" alt="" width="72" height="72" onerror="this.remove()">
+      <p id="pending-note">招待リンクと紹介リンクは、動画に合わせて開いていきます。</p>
+    </div>
+
+    <div class="sections" id="sections" aria-live="polite">
+      <p class="loading">読み込み中…</p>
+    </div>
+
+    <footer class="footer">
+      <div class="walk-lane" id="walk-lane">
+        <div class="walker" role="presentation"></div>
+      </div>
+      <p class="footer-disclosure" id="footer-disclosure">※本ページにはアフィリエイトリンク・招待コードを含みます（PR）</p>
+      <p class="footer-name" id="footer-name">白井ソラのAIニュース</p>
+    </footer>
+  </div>
+  <noscript>
+    <div class="shell noscript">
+      <p>リンク一覧の表示には JavaScript が必要です。</p>
+      <p><a href="https://www.youtube.com/@shirai-sora-ai">YouTube</a></p>
+      <p><a href="mailto:shirai.sora.ch@gmail.com">お問い合わせ（PR・企業案件）</a></p>
+    </div>
+  </noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>

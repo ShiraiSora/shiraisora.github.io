@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "白井ソラのAIニュース｜お得ツール＆紹介ガジェットまとめ",
+    "description": "最新AIニュースとガジェットを、ソラがわかりやすくお届け！動画で紹介したAIサービスと制作環境のまとめです。",
+    "siteUrl": "https://shiraisora.github.io",
+    "ogImage": "assets/ogp.png"
+  },
+  "profile": {
+    "heroName": "白井ソラ",
+    "kicker": "AI NEWS",
+    "name": "白井ソラのAIニュース",
+    "bio": "最新AIニュースとガジェットを、ソラがわかりやすくお届け！",
+    "icon": "assets/icon.webp",
+    "iconFallback": "assets/icon.png",
+    "iconAlt": "白井ソラ"
+  },
+  "disclosure": "※本ページにはアフィリエイトリンク・招待コードを含みます（PR）",
+  "pendingNote": "招待リンクと紹介リンクは、動画に合わせて開いていきます。",
+  "footer": "白井ソラのAIニュース",
+  "sections": [
+    {
+      "id": "pickup",
+      "title": "今週のピックアップ（動画で紹介したもの）",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "今週の動画で紹介したAIツール",
+          "note": "動画で触れた機能と始め方を、ここにまとめます。",
+          "url": "",
+          "badge": "動画で紹介"
+        },
+        {
+          "title": "今週の注目ガジェット",
+          "note": "ショートで紹介したアイテムの詳細は準備中です。",
+          "url": "",
+          "badge": "動画で紹介"
+        }
+      ]
+    },
+    {
+      "id": "ai-services",
+      "title": "お得に始められるAIサービス（招待・アフィ）",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "Higgsfield AI",
+          "note": "招待コードの特典内容は準備中",
+          "url": "",
+          "badge": "招待特典"
+        },
+        {
+          "title": "Runway",
+          "note": "動画生成AIの紹介特典は準備中",
+          "url": "",
+          "badge": "招待特典"
+        },
+        {
+          "title": "Tripo 3D",
+          "note": "3D生成のお試し案内は準備中",
+          "url": "",
+          "badge": "PR"
+        },
+        {
+          "title": "Meshy",
+          "note": "3Dモデル生成の紹介特典は準備中",
+          "url": "",
+          "badge": "PR"
+        },
+        {
+          "title": "ElevenLabs",
+          "note": "音声合成の招待特典は準備中",
+          "url": "",
+          "badge": "招待特典"
+        },
+        {
+          "title": "ConoHa AI Canvas",
+          "note": "画像生成の紹介特典は準備中",
+          "url": "",
+          "badge": "PR"
+        },
+        {
+          "title": "Udemy",
+          "note": "AI・動画講座のクーポンは準備中",
+          "url": "",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "gear",
+      "title": "ソラのおすすめガジェット・制作環境",
+      "sponsored": true,
+      "items": [
+        {
+          "title": "AI録音デバイス PLAUD",
+          "note": "会議や取材の録音と文字起こし",
+          "url": "",
+          "badge": "PR"
+        },
+        {
+          "title": "デスク周り",
+          "note": "マイク、照明、モニターアーム",
+          "url": "",
+          "badge": "動画で紹介"
+        },
+        {
+          "title": "レンタルサーバー ConoHa WING",
+          "note": "サイト公開用のレンタルサーバー",
+          "url": "",
+          "badge": "PR"
+        },
+        {
+          "title": "エックスサーバー",
+          "note": "安定して使える定番レンタルサーバー",
+          "url": "",
+          "badge": "PR"
+        }
+      ]
+    },
+    {
+      "id": "official",
+      "title": "公式SNS・お問い合わせ",
+      "sponsored": false,
+      "items": [
+        {
+          "title": "YouTube",
+          "note": "最新ショートは公式チャンネルで",
+          "url": "https://www.youtube.com/@shirai-sora-ai",
+          "badge": "公式",
+          "image": "assets/chibi-wink.webp"
+        },
+        {
+          "title": "お問い合わせ（PR・企業案件）",
+          "note": "shirai.sora.ch@gmail.com",
+          "url": "mailto:shirai.sora.ch@gmail.com"
+        }
+      ]
+    }
+  ]
+}
